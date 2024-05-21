@@ -1,4 +1,4 @@
-// this some solved simple js problem given by AI
+// this some simple js problem given by AI
 
 
 /*
