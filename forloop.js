@@ -69,56 +69,97 @@
 // }
 
 
+
+// {   // this is appicable for string and array
+//     //syntax for(let variblename of varible_string)
+//     // this will gonna print each letter of string i mean character
+//     let name = "wasim";
+//     // by this we can calculate length of string 
+//     let size = 0 ;
+//     for (let val of name)
+//         {
+//             // using val variable it will print character of string
+//             console.log(" value = " + val);
+//             size++;
+//         }
+//         //this statment will print the size of string
+//         console.log("the size of string is " + size);
 // }
-{   // this is appicable for string and array
-    //syntax for(let variblename of varible_string)
-    // this will gonna print each letter of string i mean character
-    let name = "wasim";
-    // by this we can calculate length of string 
-    let size = 0 ;
-    for (let val of name)
-        {
-            // using val variable it will print character of string
-            console.log(" value = " + val);
-            size++;
-        }
-        //this statment will print the size of string
-        console.log("the size of string is " + size);
-}
-{
-    //this is applicable for object and array
-    //for(let variable in objectname)
-    // it used to print the key of an object
+// {
+//     //this is applicable for object and array
+//     //for(let variable in objectname)
+//     // it used to print the key of an object
 
-    const employee = {// employee is a object
-        //this are key and it's value
-        name : "waseem",
-        phone_no : 987654321,
-        email : "abc@gmail.com",
-        age : 22,
-    };// dont forget to put semi colon at end of curly brasis of an object
-    for (let key in employee)
-        {// it only print key's of an object 
-            console.log("this is key "+ key + " and it's value = " + employee[key]);// if you wanna print value of it 
-            //this is how it is printed on console                                      objectname[key]
-        }
-}
+//     const employee = {// employee is a object
+//         //this are key and it's value
+//         name : "waseem",
+//         phone_no : 987654321,
+//         email : "abc@gmail.com",
+//         age : 22,
+//     };// dont forget to put semi colon at end of curly brasis of an object
+//     for (let key in employee)
+//         {// it only print key's of an object 
+//             console.log("this is key "+ key + " and it's value = " + employee[key]);// if you wanna print value of it 
+//             //this is how it is printed on console                                      objectname[key]
+//         }
+// }
 
-{
-    let find = 0;
-    let str = prompt("enter the string")
-    let target = prompt("enter the character you wanna search");
-    for (let i of str)
-        if(i == target){
-            let found = `character found at index ${i.length} which is ${i}`;
-            console.log(found);
-            find = 1 ;
-        }
-        else 
-        {
-            if (find != 1)
-                {
-                    console.log("character not found");
-                }
-        }
-}
+// {
+//     let find = 0;
+//     let str = prompt("enter the string")
+//     let target = prompt("enter the character you wanna search");
+//     for (let i of str)
+//         if(i == target){
+//             // this is called template literals and this stuff is called ${expression} string interpolation
+//             let found = `character found at index ${i.length} which is ${i}`;
+//             console.log(found);
+//             find = 1 ;
+//         }
+//         else 
+//         {
+//             if (find != 1)
+//                 {
+//                     console.log("character not found");
+//                 }
+//         }
+// }
+//escape character 
+// \t is used to provide space between string 
+// \n is used to give put string on next line 
+ {
+    //string are immutable
+    
+    let str = "these are\nthe escape\tcharacter ";
+    // but wont gonna change first string it will create a new value of same string that we can store in different 
+    // variable
+    // here it is
+    let newstr = str.toUpperCase(); // it will just provide us with new value we can store in different 
+    // variable
+    console.log(str);// this statement will print old string because string are immutable
+    console.log(newstr); // this gonna print the new one which is upper case
+    let sentence = "    waseem bagwan     "
+    let check = sentence.trim();
+    console.log(sentence)
+    console.log(check);
+ }
+ // they are certain method of string
+ /*
+    str.toUpperCase()
+    str.toLowerCase()
+    str.trim() to remove spaces 
+ */
+
+    {
+        const Umair = {
+            height : 5.9,
+            weight : 55,
+            skin : "fair",
+            metrimonial : "single",
+
+        };
+
+        for(let i = 0; Object.keys(Umair).lenght;i++)
+            {
+                console.log( "character" + Object.keys(Umair)[i] + " are " +Umair(Object.keys(Umair)[i]));
+            }
+    }
