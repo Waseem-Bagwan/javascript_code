@@ -62,3 +62,18 @@ console.log(`${name} is winner of codeVilla`)
     }
     
 }
+{
+    //there are few bunch of methods which are used in array 
+    // basically this is toString() which convert any type to string
+    newarr = [23,34.54,454,54]
+    console.log(newarr.toString())
+    // this concat() it used to join multiple arr and return the result
+    // we will be creating two array and concating them into one 
+
+
+
+    let arrOne = ["this is example 1 "]
+    let arrTwo = ["this is example 2 "]
+    console.log(arrOne.concat(arrTwo))
+}
+

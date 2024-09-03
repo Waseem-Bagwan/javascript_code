@@ -1,0 +1,1 @@
+//here we gonna create about document object model which is abbreviate know as DOM  
